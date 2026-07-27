@@ -5,23 +5,23 @@
 class Snowball < Formula
   desc "Render AsciiDoc books to PDF/EPUB via the native asciidoctor toolchain"
   homepage "https://github.com/codcod/snowball"
-  version "0.1.4"
+  version "0.2.0"
 
   depends_on "node"
   depends_on "ruby"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codcod/snowball/releases/download/v0.1.4/snowball_0.1.4_darwin_amd64.tar.gz"
-      sha256 "0d21c7b0fab2abf5637c6de16937aae21ef7302b7296500395ae74eb74755e46"
+      url "https://github.com/codcod/snowball/releases/download/v0.2.0/snowball_0.2.0_darwin_amd64.tar.gz"
+      sha256 "5f00e392b48414b452610f97dee8b6e2fc30853b5176d9cee789ea61778b18c1"
 
       define_method(:install) do
         bin.install "snowball"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codcod/snowball/releases/download/v0.1.4/snowball_0.1.4_darwin_arm64.tar.gz"
-      sha256 "7104cf8658f288595f5d54c2ece08874633e0861a2c2362a59a72b4d36d70426"
+      url "https://github.com/codcod/snowball/releases/download/v0.2.0/snowball_0.2.0_darwin_arm64.tar.gz"
+      sha256 "a8291502611d00b29475f5b6ff9932c5f2f6a0b9b0ddb0cdcf71509a89610825"
 
       define_method(:install) do
         bin.install "snowball"
@@ -31,15 +31,15 @@ class Snowball < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/snowball/releases/download/v0.1.4/snowball_0.1.4_linux_amd64.tar.gz"
-      sha256 "cf65ca2dd3aa634c94f4b4629d03ab86ac02ee5a1cf5a40155d0e6e324c8a7e1"
+      url "https://github.com/codcod/snowball/releases/download/v0.2.0/snowball_0.2.0_linux_amd64.tar.gz"
+      sha256 "487200a5fd2780b86b7de9b2f3cb65a7e932453da7bc38517c61d1dce9043f22"
       define_method(:install) do
         bin.install "snowball"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/snowball/releases/download/v0.1.4/snowball_0.1.4_linux_arm64.tar.gz"
-      sha256 "0da4954f857bff64778cc476fe6257d2784213e4cd39a7ecfcb4ed77387060ca"
+      url "https://github.com/codcod/snowball/releases/download/v0.2.0/snowball_0.2.0_linux_arm64.tar.gz"
+      sha256 "33a7a230c429ce9a24436ad2cb9104206243a9d1e709cdf06996abafd93e6144"
       define_method(:install) do
         bin.install "snowball"
       end
