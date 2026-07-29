@@ -10,7 +10,7 @@ class Pickle < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/codcod/pickle/releases/download/v0.2.1/pickle_0.2.1_darwin_amd64.tar.gz"
-      sha256 "95bb68261c0057dbd60015f9a817d7bef02d4ceac16b9a62bf656cfe9224a492"
+      sha256 "7e7f66ae5b2fe3a04bd34e3613993806d3dfdec92073a5939306bcdf8e100e1b"
 
       define_method(:install) do
         bin.install "pickle"
@@ -18,7 +18,7 @@ class Pickle < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/codcod/pickle/releases/download/v0.2.1/pickle_0.2.1_darwin_arm64.tar.gz"
-      sha256 "e5dd533f89a7d876e5e3c9c2053005774ab18d1bb7fa664ce46f98f5ebe74378"
+      sha256 "f57b38638b00edd0bd2d4832ae126e26dc8dc413dada7fac757d1cc73b07cf51"
 
       define_method(:install) do
         bin.install "pickle"
@@ -29,14 +29,14 @@ class Pickle < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/codcod/pickle/releases/download/v0.2.1/pickle_0.2.1_linux_amd64.tar.gz"
-      sha256 "605ab8f4542cb2b910f89864b4790e8feceab283d7848813d890ca8c0f12aaf6"
+      sha256 "7d357360e8ce357404684e67e5864cee0ebc00b727ef2461f86eae7e0e5b0c51"
       define_method(:install) do
         bin.install "pickle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/codcod/pickle/releases/download/v0.2.1/pickle_0.2.1_linux_arm64.tar.gz"
-      sha256 "e0e6db13f27ae9d26dacfb301cee1d34d3d21abec6430e14ef620eef9934a57d"
+      sha256 "8cbcb43c4548868d2843c1a100801c330fec938f4cd3748d88091ae7f29e06a9"
       define_method(:install) do
         bin.install "pickle"
       end
