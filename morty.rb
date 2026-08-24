@@ -10,7 +10,7 @@ class Morty < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_darwin_amd64.tar.gz"
-      sha256 "09533dc556e9bf8e1532abb51d0dba4f1d003eb578cb53c19f01c2299ffd3dc9"
+      sha256 "1b25f0433a9a2c09d32c0cd2c2d68a7e01eef6a29360b820f8f77141bbb6c053"
 
       define_method(:install) do
         bin.install "morty"
@@ -18,7 +18,7 @@ class Morty < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_darwin_arm64.tar.gz"
-      sha256 "15a9abb33fdeb47417f20725b41a76bba549b9afbc2566bcc9a23baac74c7a4b"
+      sha256 "99329adef4e5114b07669d92541e38324381b8e43e5b56e8544383fce3c376f7"
 
       define_method(:install) do
         bin.install "morty"
@@ -29,14 +29,14 @@ class Morty < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_linux_amd64.tar.gz"
-      sha256 "2d52cde8a0eb7e557978eaf115fa663b283befde08d97b566f25946819baecb1"
+      sha256 "a8dba5dcd3281a010a8aee878b9c14b7bacaf14a48cd5b431a977cdcde620036"
       define_method(:install) do
         bin.install "morty"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_linux_arm64.tar.gz"
-      sha256 "554ba5c8e3255a6806d6d480c67084477511b8bd5125bca4cbafa75660a01974"
+      sha256 "08ed10031da2c5dc823a8a7cb7c4d97b2f7782ff2e02b9a8efcd857ae53ec7b0"
       define_method(:install) do
         bin.install "morty"
       end
