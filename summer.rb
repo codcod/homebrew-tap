@@ -5,20 +5,20 @@
 class Summer < Formula
   desc "LLM-driven agile-coaching assistant for Jira refinement, planning and review prep"
   homepage "https://github.com/codcod/summer"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codcod/summer/releases/download/v0.1.0/summer_0.1.0_darwin_amd64.tar.gz"
-      sha256 "d6ab07c12295bcd74e9ec888e7478b59c7d8024bb5efac42a6b2b1ed26628f61"
+      url "https://github.com/codcod/summer/releases/download/v0.2.0/summer_0.2.0_darwin_amd64.tar.gz"
+      sha256 "9dcec15960a7154504d0d382ea245d01a4fbc80104d841041644663c3d6da5f0"
 
       define_method(:install) do
         bin.install "summer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codcod/summer/releases/download/v0.1.0/summer_0.1.0_darwin_arm64.tar.gz"
-      sha256 "711980e4a8822254f8ebc49b41d74a79a57fe6b38086f7d5b6977f18b32e65a8"
+      url "https://github.com/codcod/summer/releases/download/v0.2.0/summer_0.2.0_darwin_arm64.tar.gz"
+      sha256 "9ef1f91d5f97470361d51f276a25838d431deea84a4db264df953520f3f24c0d"
 
       define_method(:install) do
         bin.install "summer"
@@ -28,15 +28,15 @@ class Summer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/summer/releases/download/v0.1.0/summer_0.1.0_linux_amd64.tar.gz"
-      sha256 "bce0c980fd3055ef448ccc72cc5f62dcdf78e07dc9b95457a996acebc3845da5"
+      url "https://github.com/codcod/summer/releases/download/v0.2.0/summer_0.2.0_linux_amd64.tar.gz"
+      sha256 "351da2f2ba6ea8db35b83e6ca7c1a61213ad5243201ef5791bebfe5e71285ad1"
       define_method(:install) do
         bin.install "summer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/summer/releases/download/v0.1.0/summer_0.1.0_linux_arm64.tar.gz"
-      sha256 "ae286a8ac530efa3cb73e3a038054172cbffcf1356dbeec83fb715ef755fb6f1"
+      url "https://github.com/codcod/summer/releases/download/v0.2.0/summer_0.2.0_linux_arm64.tar.gz"
+      sha256 "81d7bc972e57c21b0225c231456b97038a7d69f48b769802d137cff72644e7bb"
       define_method(:install) do
         bin.install "summer"
       end
