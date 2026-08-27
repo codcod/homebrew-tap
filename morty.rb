@@ -5,20 +5,20 @@
 class Morty < Formula
   desc "Deterministic Atlassian gateway CLI: Jira issue transport, transitions and snapshots"
   homepage "https://github.com/codcod/morty"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_darwin_amd64.tar.gz"
-      sha256 "1b25f0433a9a2c09d32c0cd2c2d68a7e01eef6a29360b820f8f77141bbb6c053"
+      url "https://github.com/codcod/morty/releases/download/v0.2.0/morty_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b585ec3ec1752bec1ca216284d8f42470aa2e5e1d0972da45f71e84760921419"
 
       define_method(:install) do
         bin.install "morty"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_darwin_arm64.tar.gz"
-      sha256 "99329adef4e5114b07669d92541e38324381b8e43e5b56e8544383fce3c376f7"
+      url "https://github.com/codcod/morty/releases/download/v0.2.0/morty_0.2.0_darwin_arm64.tar.gz"
+      sha256 "27bead2c458c1c07b235407359d4304891073c4ed43cc963c5236ac04c3899ec"
 
       define_method(:install) do
         bin.install "morty"
@@ -28,15 +28,15 @@ class Morty < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_linux_amd64.tar.gz"
-      sha256 "a8dba5dcd3281a010a8aee878b9c14b7bacaf14a48cd5b431a977cdcde620036"
+      url "https://github.com/codcod/morty/releases/download/v0.2.0/morty_0.2.0_linux_amd64.tar.gz"
+      sha256 "6c72c514c03f2da87ad74c9c87548e06d6aacf9a0a3a3b91a709c9ead2083abc"
       define_method(:install) do
         bin.install "morty"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/morty/releases/download/v0.1.0/morty_0.1.0_linux_arm64.tar.gz"
-      sha256 "08ed10031da2c5dc823a8a7cb7c4d97b2f7782ff2e02b9a8efcd857ae53ec7b0"
+      url "https://github.com/codcod/morty/releases/download/v0.2.0/morty_0.2.0_linux_arm64.tar.gz"
+      sha256 "523669431cc7f64f804caae034d85c022b76671effed6721c16a8355797ed719"
       define_method(:install) do
         bin.install "morty"
       end
