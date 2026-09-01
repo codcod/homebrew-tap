@@ -5,20 +5,20 @@
 class Jerry < Formula
   desc "A single binary that scaffolds a repository of Architecture Decision Records and Solution Designs, then owns every rule that governs it."
   homepage "https://github.com/codcod/jerry"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codcod/jerry/releases/download/v0.1.0/jerry_0.1.0_darwin_amd64.tar.gz"
-      sha256 "55ac35e7d4ec661680f1aa23d65fd682801455716299857a83d639e7674c6edf"
+      url "https://github.com/codcod/jerry/releases/download/v0.1.1/jerry_0.1.1_darwin_amd64.tar.gz"
+      sha256 "fc846c0087780185b38cbcd6835cb358740377f9dbe1dd52d40da107b4fe4398"
 
       define_method(:install) do
         bin.install "jerry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codcod/jerry/releases/download/v0.1.0/jerry_0.1.0_darwin_arm64.tar.gz"
-      sha256 "120c7a98fdeace2d0dda99f376b06b859daf665d8bdcf46418e4815e36b7eb02"
+      url "https://github.com/codcod/jerry/releases/download/v0.1.1/jerry_0.1.1_darwin_arm64.tar.gz"
+      sha256 "1a49a129b2d0f6d466cd8d1b169787e09e2983d0887967a3e2ddf3bef2553316"
 
       define_method(:install) do
         bin.install "jerry"
@@ -28,15 +28,15 @@ class Jerry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/jerry/releases/download/v0.1.0/jerry_0.1.0_linux_amd64.tar.gz"
-      sha256 "3e2d308e98cb4f1dea8a564e04fce62a8528f3321631d883e114bd8c630a071d"
+      url "https://github.com/codcod/jerry/releases/download/v0.1.1/jerry_0.1.1_linux_amd64.tar.gz"
+      sha256 "c8bd634813e79b15da1dc07f36daa2347c585584aef4e0178d852b93a6fa043d"
       define_method(:install) do
         bin.install "jerry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/jerry/releases/download/v0.1.0/jerry_0.1.0_linux_arm64.tar.gz"
-      sha256 "52e0c7ecea705964c4e8c6690b006fe2789ebbb9976d32de7607bbf33ef1833f"
+      url "https://github.com/codcod/jerry/releases/download/v0.1.1/jerry_0.1.1_linux_arm64.tar.gz"
+      sha256 "e06534f516d36de3ff21f35ebe246b9ddbcda4960cc0dd0d0c1e05cb7f8cae8c"
       define_method(:install) do
         bin.install "jerry"
       end
