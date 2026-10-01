@@ -5,20 +5,20 @@
 class Pickle < Formula
   desc "Ticket-based, board-driven feature flow as a CLI"
   homepage "https://github.com/codcod/pickle"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/codcod/pickle/releases/download/v1.0.0/pickle_1.0.0_darwin_amd64.tar.gz"
-      sha256 "cd393548cd7505afbcf5c1f609d5115c67fa09ebabdc51706660fac9bab75a62"
+      url "https://github.com/codcod/pickle/releases/download/v1.1.0/pickle_1.1.0_darwin_amd64.tar.gz"
+      sha256 "4ea9fd2500faadaf5dfc2675ead1adaeb4e6229c96110b1daba75603700495b5"
 
       define_method(:install) do
         bin.install "pickle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/codcod/pickle/releases/download/v1.0.0/pickle_1.0.0_darwin_arm64.tar.gz"
-      sha256 "de3ba045981c6d396292a4b02178f0c2491a0be7ec59ae19c4c9ffe87b23eedc"
+      url "https://github.com/codcod/pickle/releases/download/v1.1.0/pickle_1.1.0_darwin_arm64.tar.gz"
+      sha256 "b9d43dc03bafb6a7283e2ca0cc0ac796d3a4c4378bfd8bb0175ceac2d3385b17"
 
       define_method(:install) do
         bin.install "pickle"
@@ -28,15 +28,15 @@ class Pickle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/pickle/releases/download/v1.0.0/pickle_1.0.0_linux_amd64.tar.gz"
-      sha256 "371a72b5ac66dfcccdc46a8e94704420091c5af649fee279a7b64d19486bf6a9"
+      url "https://github.com/codcod/pickle/releases/download/v1.1.0/pickle_1.1.0_linux_amd64.tar.gz"
+      sha256 "42cf8d5efb2623999aa87875ff6602957977feef4699db5c73dea421193d0816"
       define_method(:install) do
         bin.install "pickle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/codcod/pickle/releases/download/v1.0.0/pickle_1.0.0_linux_arm64.tar.gz"
-      sha256 "3d9d4f78c3faddb3f7643463ad43ee80b3c5704c175bf4b3736703e7cdca084d"
+      url "https://github.com/codcod/pickle/releases/download/v1.1.0/pickle_1.1.0_linux_arm64.tar.gz"
+      sha256 "b8550c56b6a392823de23a7e65503ea1ab2fa6c10a167c4a06f2a7e9b0859277"
       define_method(:install) do
         bin.install "pickle"
       end
